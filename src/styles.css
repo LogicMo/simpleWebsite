@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+p {
+    font-family: 'Spectral SC', serif;
+}
+
+table tr th {
+    font-family: 'Spectral SC', serif;
+}
+
+.custom {
+    margin-bottom: 0px !important;
+}
+
+.footer-block {
+    margin-bottom: 0px !important;
+}

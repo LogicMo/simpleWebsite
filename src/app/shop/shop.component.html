@@ -1,0 +1,44 @@
+
+<div class="container" >
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-body text-center" ><h4>Cart :</h4> <span *ngFor="let item of cart" >{{item.name}} </span></div>
+      <div class="container text-center">
+        <h4>Total : {{total}}</h4>
+        <p>Quantity: <input type="hidden"  [(ngModel)]="k" > <span >{{k}}</span> </p>  
+        <button class="btn btn-danger" (click)="resetCart()" >Reset Cart</button>       
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="container">
+    <h2>One Plus</h2>
+    <p>Never Settle</p>            
+    
+    <div class="panel panel-primary custom-panel" *ngFor="let items of productList" >
+      <div class="panel-heading text-center"><p>{{items.name}}</p></div>
+      <div class="panel-body"><img src="{{items.url}}" alt="{{items.name}}" class="img-responsive" >
+        <hr>
+        <div class="text-center"><p>Rs.{{items.price}}</p></div>
+      </div>
+      
+      <div class="panel-footer text-center"><button class="btn btn-success" (click)="addToCart(items)" ><p>Add to Cart</p></button></div>
+    </div>
+</div> 
+
+<!-- <div class="container">
+    <div class="row shop-row">
+
+        <div class="card text-center" *ngFor="let items of productList" >
+          <img src="{{items.url}}" alt="{{items.name}}"  >
+          <div class="container-img">
+            <h4><b>{{items.price}}</b></h4> 
+            <p><span class="text-left">Likes: <b>{{items.name}}</b></span></p>  
+            
+            <p><span class="text-left">Likes: <b>{{items.name}}</b></span></p>          
+          </div>
+      </div>   
+
+    </div>
+  </div> -->

@@ -1,0 +1,166 @@
+<div class="container-fluid">
+  <div class="row">
+    <h3 class="text-center" >Gallery</h3>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="row text-center">
+    <button class="btn btn-success" (click)="doSomething()" >Click to Load Gallery</button>
+  </div>
+</div> -->
+
+
+
+
+
+
+<!-- <ul *ngFor="let images of _images" >
+  <li>{{ images.likes }}</li>
+</ul> -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="card" *ngFor="let images of ( _images ? _images.slice(0, 100) : [] )" >
+      <img src="{{images.webformatURL}}" alt="{{images.tags}}" style="width:100%">
+      <div class="container-img">
+        <h4><b>{{images.tags}}</b></h4> 
+        <p><span class="text-left">Likes: <b>{{images.likes}}</b></span> <span class="text-right">Views: <b>{{images.views}}</b></span></p> 
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="container">
+  <div class="row text-center">
+    <input type="text" [(ngModel)]="queryImage"  (keyup)="searchImages(queryImage)" placeholder="Type Something..">
+    <!-- <button class="btn btn-success" (click)="searchImages(queryImage)" >Search Image</button> -->
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+  </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="card" *ngFor="let searchedItems of _searchedImages | paginate: { itemsPerPage: 20, currentPage: p }" >
+          <img src="{{searchedItems.webformatURL}}" alt="{{searchedItems.tags}}" class="img-responsive" style="width:100%" >
+          <div class="container-img">
+            <h4><b>{{searchedItems.tags}}</b></h4> 
+            
+            <p>{{i}}</p>            
+            <p><span class="text-left">Likes: <b>{{searchedItems.likes}}</b></span> <span class="text-right">Views: <b>{{searchedItems.views}}</b></span></p>           
+          </div>
+      </div>   
+
+    </div>
+  </div>
+
+  <div class="container pag-control" *ngIf="_searchedImages" >
+    <div class="row text-center">
+        <pagination-controls (pageChange)=" p = $event " ></pagination-controls>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container">
+  <div class="row">
+
+    <div class="custom-card" >
+      <a href="#"><img src="../../assets/imgs/1.jpg" alt="Image" #one class="img-responsive custom-img one" (click)="openModal($event.target)" > </a>
+      <a href="#"><img src="../../assets/imgs/1.jpg" alt="Image" #two class="img-responsive custom-img two" (click)="openModal(this)" ></a>
+      <a href="#"><img src="../../assets/imgs/1.jpg" alt="Image" #three class="img-responsive custom-img three" (click)="openModal($event)" ></a>
+      <a href="#"><img src="../../assets/imgs/1.jpg" alt="Image" #four class="img-responsive custom-img four" (click)="openModal($event)" >     </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="container modal">
+  <img src="" alt="Something">
+</div> -->
+
+
+

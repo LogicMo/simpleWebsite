@@ -1,0 +1,52 @@
+h3 {
+    font-family: 'Spectral SC', serif;   
+}
+.btn {
+    border-radius: 0px !important;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    display: inline-block;
+    margin: .5em;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-img {
+    padding: 2px 16px;
+}
+
+.pag-control {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+
+/*  */
+
+/* .card img {
+    display: inline-block;
+} */
+
+.custom-card {
+    display: inline-block;
+}
+
+.custom-img {
+    display: inline-block;
+    width: 20%;
+    margin-right: .5em;
+}
+
+.modal {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    
+}

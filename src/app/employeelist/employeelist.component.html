@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul *ngFor="let items of list  " class="list-group" (click)="onSelect(items)" >
+        <li class="list-group-item list-group-item-danger " ><span class="label label-default" >{{ items.id }}</span> <span>{{ items.name }}</span></li>
+      </ul> 
+    </div>
+  </div>
+</div>
+
+<!-- | paginate: { itemsPerPage:2, currentPage: p } -->
+
+
+<!-- <div class="container">
+  <div class="row">
+    <pagination-controls (pageChange)=" p = $event " ></pagination-controls>
+  </div>
+</div> -->
